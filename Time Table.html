@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time Table</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman";
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: maroon;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            color: blueviolet;
+        }
+
+        table {
+            width: 100%;
+            height: 550px;
+            table-layout: fixed;
+            border: 2px solid gray;
+            border-spacing: 3px;
+        }
+
+        th {
+            background-color: #8656A5;
+            color: white;
+            text-align: center;
+            height: 40px;
+        }
+
+        td {
+            border: 1px solid gray;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Day column */
+        .day {
+            background-color: #D8C5E8;
+            font-weight: bold;
+        }
+
+        /* Subject cells */
+        .subject {
+            background-color: #E8E8FA;
+            color: black;
+        }
+
+        /* Break columns */
+        .break {
+            background-color: #8656A5;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 20px;
+        }
+
+        /* Hover effect */
+        .subject:hover {
+            background-color: #D6C5EA;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.kluniversity.in">
+        <img src="./KL logo.png" alt="KL LOGO"
+             width="200" height="200">
+    </a>
+    <h1>KONERU LAKSHMAIAH EDUCATION FOUNDATION</h1>
+    <h2>Time Table</h2>
+    <h3>M P Praneeth Sharma_Time Table</h3>
+
+    <table border="1">
+
+        <colgroup>
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.11%">
+            <col style="width: 11.12%">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>DAY</th>
+                <th>1</th>
+                <th>2</th>
+                <th></th>
+                <th>3</th>
+                <th>4</th>
+                <th></th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td class="day">MON</td>
+
+                <td rowspan="3" colspan="2" class="subject">
+                    26MT1202E-L - S-1 - RoomNo-C109
+                </td>
+
+                <td rowspan="6" class="break">
+                    B<br>R<br>E<br>A<br>K
+                </td>
+
+                <td rowspan="2" colspan="2" class="subject">
+                    26SC1203E-S - S-1 - RoomNo-C109
+                </td>
+
+                <td rowspan="6" class="break">
+                    B<br>R<br>E<br>A<br>K
+                </td>
+
+                <td class="subject">
+                    26EC1101E-L - S-2 - RoomNo-C209
+                </td>
+
+                <td class="subject">
+                    26SC1204E-L - S-2 - RoomNo-C209
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day">TUE</td>
+
+                <td colspan="2" class="subject">
+                    26EC1101E-L - S-2 - RoomNo-C209
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day">WED</td>
+
+                <td rowspan="3" colspan="2" class="subject">
+                    26EC1101E-L - S-2 - RoomNo-C209
+                </td>
+
+                <td rowspan="2" colspan="2" class="subject">
+                    26SC1204E-P - S-2 - RoomNo-C209
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day">THU</td>
+
+                <td rowspan="2" colspan="2" class="subject">
+                    26SC1203E-L - S-1 - RoomNo-C109
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day">FRI</td>
+
+                <td colspan="2" class="subject">
+                    26UC1204E-P - S-2 - RoomNo-C209
+                </td>
+            </tr>
+
+            <tr>
+                <td class="day">SAT</td>
+
+                <td colspan="2" class="subject">
+                    26EC1101E-L - S-2 - RoomNo-C209
+                </td>
+
+                <td colspan="2" class="subject">
+                    26UC1204E-P - S-2 - RoomNo-C209
+                </td>
+
+                <td colspan="2" class="subject">
+                    26UC1204E-L - S-1 - RoomNo-C109
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
